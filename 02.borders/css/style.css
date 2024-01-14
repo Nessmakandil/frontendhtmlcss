@@ -1,0 +1,97 @@
+body {
+    background-color: beige;
+}
+
+.Parent {
+    background-color: aquamarine;
+    width: 600px;
+    height: 250px;
+    margin: 50px 200px;
+    display: block;
+}
+
+.Title {
+    background-color: azure;
+    margin: auto;
+    width: 10%;
+}
+
+/*.Data {
+    background-color: blanchedalmond;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+    border-color: khaki;
+    border-style: dotted;
+    border-width: 5px;
+}*/
+
+body div {
+    background-color: blanchedalmond;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px 30px;
+    border-color: khaki;
+    border-style: dotted;
+    border-width: 5px;
+    display: inline-block;
+    border-radius: 5px 80px / 100px;
+    box-shadow: 10px 10px 10px 1px tan;
+    /*border-radius: 20px / 100px;*/
+    /* border-radius: 10px;*/
+}
+
+.mydiv, span {
+    visibility: hidden;
+    display: none;
+}
+
+.image {
+    border-width: 20px;
+    background-color: white;
+    border-radius: 0;
+    border-image-source: url("../../images.jpg");
+    border-image-slice: 40;
+    border-image-repeat:round;
+    border-image-outset: 0;
+}
+
+.frame {
+    border-width: 30px;
+    background-color: white;
+    border-radius: 0;
+    border-image-source: url("../../frame-4822807_1280.webp");
+    border-image-slice: 290;
+}
+
+
+
+.Position1 {
+    position:fixed;
+    top: 10px;
+    left: 10px;
+    background-color: blue;
+}
+
+.Position2 {
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+}
+
+.Position3 {
+    position:relative;
+    top: 50px;
+    left: 10px;
+    background-color: green;
+}
+
+.Position4 {
+    position:sticky;
+    top: 10px;
+    background-color: yellow;
+}
+

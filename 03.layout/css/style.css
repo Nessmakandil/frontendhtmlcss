@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.Container {
+    box-sizing: border-box;
+    border: 3px solid black;
+    margin: 20px;
+    /* display: list-item;
+    list-style-position: inside; */
+}
+
+.red {
+    background-color: lightcoral;
+}
+
+.green {
+    width: 250px;
+    background-color: lightgreen;
+}
+
+.blue {
+    height: 200px;
+    background-color: lightskyblue;
+}
+
+.orange {
+    width: 150px;
+    height: 150px;
+    background-color: lightsalmon;
+}
+

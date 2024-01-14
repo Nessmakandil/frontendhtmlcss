@@ -1,0 +1,94 @@
+/* Universal Selector has low priority*/
+* {
+    color: black;
+}
+
+/* select by Element*/
+body {
+    background-color: beige;
+}
+
+/* select by Element*/
+h1 {
+    color: brown;
+}
+
+/* select by Element*/
+h2 {
+    color: navy;
+}
+
+/* select by Class*/
+.Data{
+    color: blueviolet;
+}
+
+/* select by ID*/
+#Name {
+    color: blue;
+}
+
+/*Combinators*/
+/* 1. Comma: Applied to the comma separated elements*/
+h4, h5, h6 {
+    color: cadetblue;
+}
+
+/* 2. Space: All p inside div is colored*/
+div p {
+    color: chartreuse;
+}
+
+/* 3. Greater Than (>): Select all p that are direct children of div parent*/
+div>p {
+    color: coral;
+}
+
+/* 4. Plus (+): All p elements immediately after div.*/
+div+p {
+    color: crimson;
+}
+
+/* 5. Telda (~): All p elements siblings to div.*/
+div+p {
+    color: deeppink;
+}
+
+
+/* Attribute Selector */
+[width] {
+    color: darkgreen;
+}
+
+[width = "100px"] {
+    color: darkturquoise;
+}
+
+[width^="1"] {
+    color: fuchsia;
+}
+
+[width$="3px"] {
+    color: hotpink;
+}
+
+[width*="8"] {
+    color: forestgreen;
+}
+
+[abc~="ccc"] {
+    color: peru;
+}
+
+/*Start of abc or followed by -*/
+[abc|="aaa"] {
+    color: purple;
+}
+
+div[xxx="aaa"] {
+    color: chocolate;
+}
+
+div [xxx="ccc"] {
+    color: plum;
+}

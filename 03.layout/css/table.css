@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    box-sizing: border-box;
+    border: 3px solid black;
+    margin: 20px;
+    display: table;
+    width: 400px;
+}
+
+.caption {
+    display: table-caption;
+}
+
+.header {
+    display: table-header-group;
+}
+
+.body {
+    display: table-row-group;
+}
+
+.footer {
+    display: table-footer-group;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+}
