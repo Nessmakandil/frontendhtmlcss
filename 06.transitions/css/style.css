@@ -1,0 +1,123 @@
+body {
+    margin: 150px;
+    perspective: 1000px;
+}
+.transition{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.transition:hover {
+    background-color: green;
+    width: 150px;
+    height: 150px;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: change;
+    animation-duration: 2s;
+}
+
+
+
+.animation{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-duration: 3s;
+    animation-name: change-color;
+    animation-delay: 0.5s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+.animation:hover {
+    /* animation-duration: 3s;
+    animation-name: change-color; */
+    animation-play-state: paused;
+}
+@keyframes change-color {
+    0% {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    50% {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+    }
+    100% {
+        width: 150px;
+        height: 150px;
+        background-color: yellow;
+    }
+}
+
+.transform1 {
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* transform: translateX(30px); */
+    /* transform: scaleX(2); */
+    /* transform: skewX(45deg); */
+    transform: rotate(30deg);
+    transform-origin: left;
+
+}
+
+.transform2 {
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+.container {
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    perspective-origin: right;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(30deg);
+}
+
+.red-square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* display: inline-block; */
+    background-color: red;
+    color: white;
+    text-align: center;
+    /* transform: rotateX(45deg); */
+    /* transform: perspective(50px) rotateY(60deg); */
+    /* transform: translateZ(-500px); */
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.blue-square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    /* display: inline-block; */
+    background-color: blue;
+    color: white;
+    text-align: center;
+    /* transform: rotateX(45deg); */
+    /* transform: perspective(50px) rotateY(60deg); */
+    transform: translateZ(-200px);
+}

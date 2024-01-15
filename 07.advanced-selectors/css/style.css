@@ -1,0 +1,117 @@
+:root { /* same as html selector*/
+    background-color: antiquewhite;
+    font-size: 3em;
+}
+
+body {
+    font-size: 2vw;
+}
+/* :empty {
+    height: 10px;
+    background-color: burlywood;
+} */
+
+.body {
+    counter-reset: count;
+    
+}
+.Name {
+    position: relative;
+    counter-increment: count;
+}
+
+.Name::before {
+    content: open-quote attr(class) " " counter(count) ": " ;
+}
+
+.Name::after {
+    content: " " close-quote;
+}
+
+a:link {
+    background-color: aqua;
+}
+
+a:active {
+    background-color: hotpink;
+}
+
+a:visited {
+    background-color: red;
+    color: white;
+}
+
+p:hover {
+    background-color: blue;
+}
+
+input {
+    background-color: azure;
+}
+
+input:focus {
+    box-shadow: 3px 3px 3px tan;
+}
+
+input:disabled {
+    box-shadow: 3px 3px 3px black;
+}
+
+/* TODO: 
+input::before:required {
+    content: "* ";
+} */
+
+ul:first-child {
+    background-color: hotpink;
+}
+
+li:first-child{
+    background-color: aqua;
+}
+
+ul {
+
+    list-style: none;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="checkbox"]:checked {
+    background-color: green;
+}
+
+.vp {
+    background-color: rebeccapurple;
+    color: white;
+    /* width: 50vw;
+    height: 50vh; */
+    width: 3em;
+    height: 3em;
+}
+
+.inner {
+    background-color: thistle;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.container{
+    position: relative;
+    width: 100px;
+    height: 200px;
+    background-color: red;
+}
+
+.inside {
+    position: absolute;
+    background-color: green;
+    width: 50%;
+    height: 50%;
+}
